@@ -5,7 +5,6 @@ def ridge_regression(x_train, y_train, lam):
 	'''
 	http://hyperanalytic.net/ridge-regression
 	'''
-    
     X = np.array(x_train)
     ones = np.ones(len(X))
     X = np.column_stack((ones, X))
@@ -20,6 +19,7 @@ def ridge_regression(x_train, y_train, lam):
     
  
 if __name__ == '__main__':
+
 	x = np.random.random_sample((10,))
 	y = x * np.random.random_sample((10, ))
 
